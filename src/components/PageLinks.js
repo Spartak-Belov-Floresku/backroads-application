@@ -6,7 +6,7 @@ const PageLinks = ({parentClass, childClass}) =>  <ul className={parentClass} id
     {
         pageLinks.map( link => (
             <li key={link.id}>
-                <a href={link.href} rel="noopener" className={childClass}>{link.text}</a>
+                <a href={link.href} rel="noopener noreferrer" className={childClass}>{link.text}</a>
             </li>
         ))
     }
